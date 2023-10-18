@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Business",
+    "\\Business\\Exceptions",
+    "\\Business\\ExtensionMethods",
+    "\\Business\\Interfaces",
+    "\\Data",
+    "\\Web API"
+  ],
+  "SelectedNode": "\\Business\\Interfaces\\IStudentService.cs",
+  "PreviewInSolutionExplorer": false
+}

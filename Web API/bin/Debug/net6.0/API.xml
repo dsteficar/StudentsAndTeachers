@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:Web_API.Controllers.ContactInfosController.GetContactInfoList">
+            <summary>
+            Shows all users
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.ContactInfosController.GetContactInfo(System.Int32)">
+            <summary>
+            Shows a specified user by id
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.ContactInfosController.UpdateContactInfo(System.Int32,Data.Models.ContactInfoDTO)">
+            <summary>
+            Updates the selected user by id
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT/Student
+                    {
+                    "id" : 1,
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="204">Returns information that the user is altered</response>
+            <response code="404">If the user is not found</response>
+        </member>
+        <member name="M:Web_API.Controllers.ContactInfosController.CreateContactInfo(Data.Models.ContactInfoDTO)">
+            <summary>
+            Creates a new user
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST/User
+                    {
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="201">Returns the newly created user</response>
+            <response code="400">If the user data is not in correct syntax</response>
+        </member>
+        <member name="M:Web_API.Controllers.ContactInfosController.DeleteContactInfo(System.Int32)">
+            <summary>
+            Deletes the specified user
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="204">Returns confirmation that user is deleted</response>
+            <response code="404">If the user is null</response>
+        </member>
+        <member name="M:Web_API.Controllers.SchoolClassesController.GetSchoolClassList">
+            <summary>
+            Shows all users
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.SchoolClassesController.GetSchoolClass(System.Int32)">
+            <summary>
+            Shows a specified user by id
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.SchoolClassesController.UpdateSchoolClass(System.Int32,Data.Models.SchoolClassDTO)">
+            <summary>
+            Updates the selected user by id
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT/Student
+                    {
+                    "id" : 1,
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="204">Returns information that the user is altered</response>
+            <response code="404">If the user is not found</response>
+        </member>
+        <member name="M:Web_API.Controllers.SchoolClassesController.CreateSchoolClass(Data.Models.SchoolClassDTO)">
+            <summary>
+            Creates a new user
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST/User
+                    {
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="201">Returns the newly created user</response>
+            <response code="400">If the user data is not in correct syntax</response>
+        </member>
+        <member name="M:Web_API.Controllers.SchoolClassesController.DeleteSchoolClass(System.Int32)">
+            <summary>
+            Deletes the specified user
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="204">Returns confirmation that user is deleted</response>
+            <response code="404">If the user is null</response>
+        </member>
+        <member name="M:Web_API.Controllers.StudentsController.GetStudentList">
+            <summary>
+            Shows all users
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.StudentsController.GetStudent(System.Int32)">
+            <summary>
+            Shows a specified user by id
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.StudentsController.UpdateStudent(System.Int32,Data.Models.StudentDTO)">
+            <summary>
+            Updates the selected user by id
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT/Student
+                    {
+                    "id" : 1,
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="204">Returns information that the user is altered</response>
+            <response code="404">If the user is not found</response>
+        </member>
+        <member name="M:Web_API.Controllers.StudentsController.CreateStudent(Data.Models.StudentDTO)">
+            <summary>
+            Creates a new user
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST/User
+                    {
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="201">Returns the newly created user</response>
+            <response code="400">If the user data is not in correct syntax</response>
+        </member>
+        <member name="M:Web_API.Controllers.StudentsController.DeleteStudent(System.Int32)">
+            <summary>
+            Deletes the specified user
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="204">Returns confirmation that user is deleted</response>
+            <response code="404">If the user is null</response>
+        </member>
+        <member name="M:Web_API.Controllers.TeachersController.GetTeacherList">
+            <summary>
+            Shows all teachers
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.TeachersController.GetTeacher(System.Int32)">
+            <summary>
+            Shows a specified teacher by id
+            </summary>
+        </member>
+        <member name="M:Web_API.Controllers.TeachersController.UpdateTeacher(System.Int32,Data.Models.TeacherDTO)">
+            <summary>
+            Updates the selected teacher by id
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT/Teacher
+                     "id": 0,
+                     "createdAt": "2023-04-28T04:51:07.443Z",
+                     "name": "Marko",
+                     "surname": "Markic",
+                     "yearsOfTeaching": 5,
+                     "salary": 1000,
+                     "associate": true,
+                     "address": "Ulica Stanka Vraza 5"
+                    }
+                    
+            </remarks>
+            <response code="204">Returns information that the teacher is altered</response>
+            <response code="404">If the teachers is not found</response>
+        </member>
+        <member name="M:Web_API.Controllers.TeachersController.CreateTeacher(Data.Models.TeacherDTO)">
+            <summary>
+            Creates a new teacher
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST/User
+                    {
+                     "id": 0,
+                     "createdAt": "2023-04-28T04:51:07.443Z",
+                     "name": "Marko",
+                     "surname": "Markic",
+                     "yearsOfTeaching": 5,
+                     "salary": 1000,
+                     "associate": true,
+                     "address": "Ulica Stanka Vraza 5"
+                    }
+                    
+            </remarks>
+            <response code="201">Returns the newly created teacher</response>
+            <response code="400">If the teacher data is not in correct syntax</response>
+        </member>
+        <member name="M:Web_API.Controllers.TeachersController.DeleteTeacher(System.Int32)">
+            <summary>
+            Deletes the specified teacher
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="204">Returns confirmation that teacher is deleted</response>
+            <response code="404">If the teacher is null</response>
+        </member>
+        <member name="M:UserApi.Controllers.UsersController.GetUserList">
+            <summary>
+            Shows all users
+            </summary>
+        </member>
+        <member name="M:UserApi.Controllers.UsersController.GetUser(System.Int32)">
+            <summary>
+            Shows a specified user by id
+            </summary>
+        </member>
+        <member name="M:UserApi.Controllers.UsersController.UpdateUser(System.Int32,Data.Models.UserDTO)">
+            <summary>
+            Updates the selected user by id
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT/User
+                    {
+                    "id" : 1,
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="204">Returns information that the user is altered</response>
+            <response code="404">If the user is not found</response>
+        </member>
+        <member name="M:UserApi.Controllers.UsersController.CreateUser(Data.Models.UserDTO)">
+            <summary>
+            Creates a new user
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST/User
+                    {
+                    "fullname" : "Marko Markic",
+                    "number" : "098123456"
+                    }
+                    
+            </remarks>
+            <response code="201">Returns the newly created user</response>
+            <response code="400">If the user data is not in correct syntax</response>
+        </member>
+        <member name="M:UserApi.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Deletes the specified user
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="204">Returns confirmation that user is deleted</response>
+            <response code="404">If the user is null</response>
+        </member>
+    </members>
+</doc>
